@@ -1,13 +1,13 @@
-{%load static%}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
-</head>
-<body>
-    <h1>Hello ,World</h1>
-</body>
-</html>
+{% include "base.html" %}
+{% block content %}
+<div class="toast toast-top toast-end">
+    <div class="alert alert-info">
+        <span>Hello from daisyUi 👋</span>
+    </div>
+</div>
+
+<div class="container mx-auto">
+<section class="flex items-center justify-center h-screen">
+    <h1 class="text-5xl">Django + Tailwind = ❤️</h1>
+</section>
+{% endblock content %}
